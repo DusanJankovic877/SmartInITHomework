@@ -1,0 +1,80 @@
+ <!DOCTYPE html>
+ <html>
+    <head>
+        <title>Prva forma</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <div style="background-color: lightgray; width:290px; padding: 5px;">
+            <fieldset style="width:255px; ">
+                <legend>My first form</legend>
+                <form action="submit" method="POST" style="padding-right: 1px;">
+                    <div>
+                        <label for="firstName">First name:</label>
+                        <input id="firstName" type="text" placeholder="Marko" >
+                    </div>
+                    <div>
+                        <label for="lastName">Last name:</label>
+                        <input id="lastName" type="text" placeholder="Markovic" style="width:67%;">
+                    </div>
+                    <div>
+                        <label for="password">Password:</label>
+                        <input id="password" type="password" style="width:69%;">
+                    </div>
+                    <div>
+                        <label for="email">E-mail:</label>
+                        <input id="email" type="email" placeholder="no-reply@something.com" style="width:76%;">
+                    </div>
+                    <div>
+                        <label for="gender">Gender:</label>
+                        <div>
+                            <div>
+                                <input id="male" name="gender" type="radio" value="male">
+                                <label for="male">Male</label>
+                            </div>
+                            <div>
+                                <input id="female" name="gender" type="radio" value="female">
+                                <label for="female">Female</label>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div>
+                        <label for="selectCourse">Select course:</label>
+                        <select name="coures" id="selectCourse">
+                            <option value="ASP.NET MVC" selected>ASP.NET MVC</option>
+                            <option value="Laravel" >Laravel</option>
+                            <option value="Vuejs" >Vuejs</option>
+                        </select>
+                    </div>
+                    <hr />
+                    <div>
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Write your comments here..."></textarea>
+                    </div>
+                    <hr />
+                    <div>
+                        <label for="training">Training:</label>
+                        <div>
+                            <input type="checkbox" id="elementary">
+                            <label for="elementary">Elementary</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="advanced">
+                            <label for="advanced">Advanced</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="proficiency">
+                            <label for="proficiency">Proficiency</label>
+                        </div>
+                    </div>
+                    <hr />
+                    <div>
+                        <button>Submit</button>
+                        <button>Reset</button>
+                    </div>
+        
+                </form>
+            </fieldset>
+        </div>
+    </body>
+ </html>
